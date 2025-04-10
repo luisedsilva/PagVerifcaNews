@@ -1,57 +1,101 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
-  
+
   body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #f9f9f9;
   }
-  
+
   header {
-    background-color: #222;
-    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .logo-container span {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .menu-links {
+    display: flex;
+    gap: 30px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #555;
+  }
+
+  .conteudo {
+    max-width: 900px;
+    margin: 120px auto 40px;
     padding: 20px;
     text-align: center;
   }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-    background-color: #444;
-    padding: 10px;
-  }
-  
-  nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
+
+  .apresentacao {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
 
- 
-  .noticia {
+  .container {
     background-color: #fff;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-left: 5px solid #222;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
-  
-  .funcoes {
-    background-color: #ddd;
-    padding: 15px;
-    margin-top: 30px;
+
+  .noticia {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
   }
-  
-  button {
-    padding: 10px 15px;
-    margin: 5px;
-    cursor: pointer;
+
+  section h2 {
+    margin-bottom: 10px;
   }
-  
+
+  p {
+    margin: 10px 0;
+    line-height: 1.6;
+  }
