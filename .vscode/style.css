@@ -1,101 +1,172 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-  }
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+}
 
-  header {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+header h1 {
+  font-size: 2.5rem;
+  color: #2d3e50;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a73e8;
+  padding: 15px 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+nav .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo-container img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+nav .logo-container span {
+  font-size: 1.4rem;
+  color: white;
+  font-weight: bold;
+}
+
+nav .menu-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1rem;
+}
+
+nav .menu-links a:hover {
+  text-decoration: underline;
+}
+
+.apresentacao, #noticias {
+  background-color: #fff;
+  padding: 40px; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;  
+  margin: 30px auto;  
+  text-align: center; 
+}
+
+.apresentacao h2, #noticias h2 {
+  font-size: 2.5rem;  
+  color: #2d3e50;
+  margin-bottom: 20px;
+}
+
+.apresentacao p, #noticias p {
+  font-size: 1.1rem; 
+  color: #666;
+  line-height: 1.8;  
+}
+
+#noticias-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.noticia {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.noticia h3 {
+  font-size: 1.4rem;
+  color: #2d3e50;
+  margin-bottom: 15px;
+}
+
+.noticia p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.noticia a {
+  color: #1a73e8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.noticia a:hover {
+  text-decoration: underline;
+}
+
+.btn-ver-mais {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.btn-ver-mais:hover {
+  background-color: #155ab4;
+}
+
+#contato {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;  
+  margin: 30px auto; 
+  text-align: center; 
+}
+
+#contato h2 {
+  font-size: 2rem;
+  color: #2d3e50;
+  margin-bottom: 20px;
+}
+
+#contato p {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
   nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 999;
-  }
-
-  .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .logo-container img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-
-  .logo-container span {
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
+    flex-direction: column;
+    text-align: center;
   }
 
   .menu-links {
-    display: flex;
-    gap: 30px;
+    margin-top: 20px;
   }
 
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
-
-  nav a:hover {
-    background-color: #555;
-  }
-
-  .conteudo {
-    max-width: 900px;
-    margin: 120px auto 40px;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .apresentacao {
-    background-color: #fff;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-
-  .container {
-    background-color: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-
-  .noticia {
-    border-bottom: 1px solid #ddd;
-    padding: 15px 0;
-  }
-
-  section h2 {
-    margin-bottom: 10px;
-  }
-
-  p {
+  .menu-links a {
     margin: 10px 0;
-    line-height: 1.6;
   }
+
+  #noticias-container {
+    grid-template-columns: 1fr;
+  }
+}
