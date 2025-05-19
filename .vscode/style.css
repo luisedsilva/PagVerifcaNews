@@ -61,26 +61,62 @@ nav .menu-links a:hover {
   text-decoration: underline;
 }
 
-.apresentacao, #noticias {
+.apresentacao, #noticias, #dicas {
   background-color: #fff;
-  padding: 40px; 
+  padding: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 1000px;  
-  margin: 30px auto;  
-  text-align: center; 
+  max-width: 1000px;
+  margin: 30px auto;
+  text-align: center;
 }
 
-.apresentacao h2, #noticias h2 {
-  font-size: 2.5rem;  
+.apresentacao h2, #noticias h2, #dicas h2 {
+  font-size: 2.5rem;
   color: #2d3e50;
   margin-bottom: 20px;
 }
 
-.apresentacao p, #noticias p {
-  font-size: 1.1rem; 
+.apresentacao p, #noticias p, #dicas p {
+  font-size: 1.1rem;
   color: #666;
-  line-height: 1.8;  
+  line-height: 1.8;
+}
+
+#dicas h3 {
+  font-size: 1.8rem;
+  color: #2d3e50;
+  margin: 20px 0 10px;
+}
+
+#dicas ul {
+  list-style-type: disc;
+  margin: 10px 0 20px 40px;
+  text-align: left;
+}
+
+#dicas ul li {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.btn-download {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.btn-download:hover {
+  background-color: #155ab4;
 }
 
 #noticias-container {
@@ -136,9 +172,9 @@ nav .menu-links a:hover {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 600px;  
-  margin: 30px auto; 
-  text-align: center; 
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: center;
 }
 
 #contato h2 {
@@ -168,5 +204,13 @@ nav .menu-links a:hover {
 
   #noticias-container {
     grid-template-columns: 1fr;
+  }
+
+  .apresentacao, #noticias, #dicas {
+    padding: 20px;
+  }
+
+  #dicas ul {
+    margin-left: 20px;
   }
 }
